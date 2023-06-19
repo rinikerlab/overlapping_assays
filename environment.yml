@@ -1,0 +1,15 @@
+name: py311_overlappingassays_
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rdkit
+  - jupyter
+  - scipy
+  - scikit-learn
+  - psycopg2
+  - ipython-sql
+  - matplotlib
+  - sqlalchemy=1.4
+  - intake
+prefix: /localhome/glandrum/.conda/envs/py311_pymoo
