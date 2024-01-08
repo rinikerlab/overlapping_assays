@@ -1,0 +1,1151 @@
+metadata:
+  version: 1
+  creator: 
+    name: greg landrum
+    email: glandrum@ethz.ch
+
+  summary: |
+    Collection of IC50 datasets with pchembl_values for bioactivity prediction.
+
+    Each row includes the reported value. Only values without data_validity_comments are included
+    
+sources:
+  CHEMBL4078-1:
+    description: "Target CHEMBL4078: Acetylcholinesterase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4078-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4078/
+      source: ChEMBL_32
+      target_organism: Electrophorus electricus
+      assays_included: CHEMBL2432731,CHEMBL1918529,CHEMBL4197231,CHEMBL3863771,CHEMBL3419738,CHEMBL3748158,CHEMBL3365679,CHEMBL4396587,CHEMBL2025880,CHEMBL4353636,CHEMBL3821434,CHEMBL4479285,CHEMBL4274256,CHEMBL1225418,CHEMBL900441,CHEMBL3135528,CHEMBL4831995,CHEMBL3879334,CHEMBL3406576,CHEMBL3390449,CHEMBL4193644,CHEMBL3870573,CHEMBL4617663,CHEMBL3994349,CHEMBL4426660,CHEMBL2174186,CHEMBL3239159,CHEMBL3614210,CHEMBL3399099,CHEMBL3815273,CHEMBL1118312,CHEMBL2343852,CHEMBL4054194,CHEMBL2351003,CHEMBL4330464,CHEMBL4354756,CHEMBL3105940,CHEMBL4408522,CHEMBL4221594,CHEMBL2394393,CHEMBL3293440,CHEMBL4710842,CHEMBL4728095,CHEMBL3269113,CHEMBL3608117,CHEMBL3399311,CHEMBL5031442,CHEMBL2416841,CHEMBL3619983,CHEMBL1785640,CHEMBL3826559,CHEMBL1167959,CHEMBL3784262,CHEMBL1103849,CHEMBL3795257,CHEMBL2438753,CHEMBL861461,CHEMBL4198332,CHEMBL4327330,CHEMBL3370619,CHEMBL4262780,CHEMBL4048097,CHEMBL2162680,CHEMBL2393908,CHEMBL3073918,CHEMBL4048075,CHEMBL3579633,CHEMBL1671574,CHEMBL4709935,CHEMBL4768336,CHEMBL3787936,CHEMBL2379028,CHEMBL2423527,CHEMBL3418215,CHEMBL2345138,CHEMBL2390138,CHEMBL3369131,CHEMBL2045011,CHEMBL3588474,CHEMBL2148329,CHEMBL3870529,CHEMBL642727,CHEMBL2395155,CHEMBL3421030,CHEMBL2405882,CHEMBL4035437,CHEMBL3637271
+      num_points: 2419
+      activity_type: IC50
+      min pchembl_value: 4.01
+      max pchembl_value: 9.44
+      median pchembl_value: 5.96
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL243-1:
+    description: "Target CHEMBL243: Human immunodeficiency virus type 1 protease"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL243-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL243/
+      source: ChEMBL_32
+      target_organism: Human immunodeficiency virus 1
+      assays_included: CHEMBL763338,CHEMBL760091,CHEMBL768257,CHEMBL4617609,CHEMBL695236,CHEMBL769051,CHEMBL769360,CHEMBL763332,CHEMBL763922,CHEMBL695235,CHEMBL763234,CHEMBL760098,CHEMBL769254,CHEMBL766054,CHEMBL769364,CHEMBL768621,CHEMBL768258,CHEMBL766933,CHEMBL763923,CHEMBL878769,CHEMBL763236,CHEMBL4682699,CHEMBL766055,CHEMBL763098,CHEMBL877854,CHEMBL695233,CHEMBL769246,CHEMBL766799,CHEMBL769367,CHEMBL763754
+      num_points: 1049
+      activity_type: IC50
+      min pchembl_value: 4.05
+      max pchembl_value: 10.40
+      median pchembl_value: 7.72
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL325-1:
+    description: "Target CHEMBL325: Histone deacetylase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL325-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2050420,CHEMBL3588678,CHEMBL4669389,CHEMBL4733657,CHEMBL3706061,CHEMBL3761211,CHEMBL867344,CHEMBL1056354,CHEMBL3291778,CHEMBL907072,CHEMBL1035661,CHEMBL4268222,CHEMBL3998876,CHEMBL2384071,CHEMBL3420276,CHEMBL5032350,CHEMBL2020395,CHEMBL3388838,CHEMBL4812486,CHEMBL5043973,CHEMBL3778475,CHEMBL4835056,CHEMBL5043884,CHEMBL1113905,CHEMBL4606150,CHEMBL1008834,CHEMBL931658,CHEMBL4813303,CHEMBL4133864,CHEMBL4623361,CHEMBL1049814,CHEMBL3388476,CHEMBL3705060,CHEMBL4689536,CHEMBL4812287,CHEMBL5047887,CHEMBL695136,CHEMBL3803863,CHEMBL4156754,CHEMBL4346116,CHEMBL3379478,CHEMBL701991,CHEMBL5039300,CHEMBL946979,CHEMBL3373385,CHEMBL3771759
+      num_points: 1443
+      activity_type: IC50
+      min pchembl_value: 4.03
+      max pchembl_value: 10.07
+      median pchembl_value: 6.71
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3471-1:
+    description: "Target CHEMBL3471: Human immunodeficiency virus type 1 integrase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3471-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3471/
+      source: ChEMBL_32
+      target_organism: Human immunodeficiency virus 1
+      assays_included: CHEMBL2318645,CHEMBL1062363,CHEMBL831653,CHEMBL3418916,CHEMBL1006489,CHEMBL1033786,CHEMBL1273470,CHEMBL1777555,CHEMBL701719,CHEMBL927106,CHEMBL3295659,CHEMBL3373530,CHEMBL701724,CHEMBL3373172,CHEMBL857173,CHEMBL1020688,CHEMBL881407,CHEMBL699303,CHEMBL3088597,CHEMBL1111323,CHEMBL1060098,CHEMBL1040344,CHEMBL701792,CHEMBL1030329,CHEMBL1003961,CHEMBL1785226,CHEMBL3369753,CHEMBL1024560,CHEMBL1004782,CHEMBL1259305,CHEMBL1685113,CHEMBL993786,CHEMBL1016884,CHEMBL888080,CHEMBL890063,CHEMBL1016223,CHEMBL2185782,CHEMBL894220,CHEMBL1211287,CHEMBL2215189,CHEMBL932796,CHEMBL701718,CHEMBL968064,CHEMBL957610,CHEMBL1057307,CHEMBL1217312,CHEMBL3294150,CHEMBL1918322,CHEMBL701802,CHEMBL3583195,CHEMBL927585,CHEMBL1816563,CHEMBL867583
+      num_points: 1761
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.30
+      median pchembl_value: 6.00
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL247-1:
+    description: "Target CHEMBL247: Human immunodeficiency virus type 1 reverse transcriptase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL247-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL247/
+      source: ChEMBL_32
+      target_organism: Human immunodeficiency virus 1
+      assays_included: CHEMBL5044986,CHEMBL1110082,CHEMBL797524,CHEMBL5033389,CHEMBL4832844,CHEMBL2432160,CHEMBL802762,CHEMBL802411,CHEMBL5037896,CHEMBL871028,CHEMBL2345503,CHEMBL800043,CHEMBL800744,CHEMBL802759,CHEMBL4833224,CHEMBL800589,CHEMBL802758,CHEMBL798389,CHEMBL799809,CHEMBL797532,CHEMBL800602,CHEMBL1005039,CHEMBL972321,CHEMBL895180,CHEMBL797511,CHEMBL1054760,CHEMBL753040,CHEMBL800982,CHEMBL804227,CHEMBL1694226,CHEMBL3755387,CHEMBL5041833,CHEMBL4737681,CHEMBL801332,CHEMBL830970,CHEMBL1959154,CHEMBL3271625,CHEMBL4428283,CHEMBL798355,CHEMBL802761,CHEMBL868998,CHEMBL802597,CHEMBL3418276,CHEMBL4273391,CHEMBL994471,CHEMBL4256391,CHEMBL4370104,CHEMBL2399276,CHEMBL798353,CHEMBL2400596,CHEMBL3383465,CHEMBL4135242,CHEMBL802406,CHEMBL800582,CHEMBL4147220,CHEMBL3088598,CHEMBL829157
+      num_points: 2054
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.28
+      median pchembl_value: 6.64
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL240-3:
+    description: "Target CHEMBL240: HERG"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL240-3.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL240/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1063190,CHEMBL2072752,CHEMBL1061741,CHEMBL766816,CHEMBL2182706,CHEMBL954102,CHEMBL895464,CHEMBL3240911
+      num_points: 249
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.00
+      median pchembl_value: 5.62
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL203-2:
+    description: "Target CHEMBL203: Epidermal growth factor receptor erbB1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL203-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL203/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2327216,CHEMBL3625155,CHEMBL2066000,CHEMBL3761557,CHEMBL3807186,CHEMBL3756968,CHEMBL3614855,CHEMBL3705330,CHEMBL4718820,CHEMBL861550,CHEMBL3616083,CHEMBL893470,CHEMBL3375345,CHEMBL3418211,CHEMBL2050649,CHEMBL3776094,CHEMBL2390159,CHEMBL3870506,CHEMBL763200,CHEMBL3385194,CHEMBL910357,CHEMBL867748,CHEMBL3240253,CHEMBL3750872,CHEMBL4258549,CHEMBL1831700,CHEMBL3226103,CHEMBL3707998
+      num_points: 830
+      activity_type: IC50
+      min pchembl_value: 4.10
+      max pchembl_value: 10.54
+      median pchembl_value: 7.12
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL279-1:
+    description: "Target CHEMBL279: Vascular endothelial growth factor receptor 2"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL279-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL279/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1250641,CHEMBL1763555,CHEMBL3102332,CHEMBL2020643,CHEMBL829589,CHEMBL866567,CHEMBL3756969,CHEMBL4330587,CHEMBL814076,CHEMBL3226104,CHEMBL887535,CHEMBL3756334,CHEMBL908504,CHEMBL871636,CHEMBL3707826,CHEMBL1119625,CHEMBL862189,CHEMBL2073498,CHEMBL3870505,CHEMBL920439,CHEMBL4811110,CHEMBL3707963,CHEMBL3636058,CHEMBL4774500,CHEMBL829592,CHEMBL894745,CHEMBL861906,CHEMBL2353613,CHEMBL829417,CHEMBL2434542,CHEMBL3130576,CHEMBL3631056,CHEMBL3706174,CHEMBL4736486,CHEMBL869847,CHEMBL907874,CHEMBL907546,CHEMBL855514,CHEMBL830878,CHEMBL4012620,CHEMBL1010124,CHEMBL864971,CHEMBL853495,CHEMBL3762407,CHEMBL3749261,CHEMBL3291812,CHEMBL4841802,CHEMBL828488,CHEMBL4820638,CHEMBL870980,CHEMBL3399480,CHEMBL829083,CHEMBL5047431,CHEMBL929873,CHEMBL1244602,CHEMBL3705991
+      num_points: 1751
+      activity_type: IC50
+      min pchembl_value: 4.26
+      max pchembl_value: 9.70
+      median pchembl_value: 7.04
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL284-1:
+    description: "Target CHEMBL284: Dipeptidyl peptidase IV"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL284-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL284/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL951312,CHEMBL1780909,CHEMBL829336,CHEMBL3074800,CHEMBL3389736,CHEMBL895494,CHEMBL1954392,CHEMBL3365706,CHEMBL867558,CHEMBL831703,CHEMBL3706075,CHEMBL3705245,CHEMBL867703,CHEMBL899730,CHEMBL2429421,CHEMBL4683606,CHEMBL3807661,CHEMBL893070,CHEMBL1686148,CHEMBL1664314,CHEMBL943037,CHEMBL4140929,CHEMBL908237,CHEMBL893277,CHEMBL2072421,CHEMBL1054090,CHEMBL3873292,CHEMBL4841116,CHEMBL3705186,CHEMBL1011679,CHEMBL4431128,CHEMBL892394,CHEMBL892415,CHEMBL1686243,CHEMBL932061,CHEMBL859540
+      num_points: 1075
+      activity_type: IC50
+      min pchembl_value: 4.02
+      max pchembl_value: 10.00
+      median pchembl_value: 7.29
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL262-1:
+    description: "Target CHEMBL262: Glycogen synthase kinase-3 beta"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL262-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL262/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4057861,CHEMBL1042364,CHEMBL5046564,CHEMBL1837408,CHEMBL2025119,CHEMBL4602766,CHEMBL827786,CHEMBL2390763,CHEMBL3404147,CHEMBL1034478,CHEMBL924443,CHEMBL3413879,CHEMBL2393654,CHEMBL4057839,CHEMBL1031513,CHEMBL4711569,CHEMBL4308530,CHEMBL4182664,CHEMBL4395841,CHEMBL1102983,CHEMBL2051312,CHEMBL963374,CHEMBL1113275,CHEMBL4431132,CHEMBL3736787,CHEMBL3097577
+      num_points: 869
+      activity_type: IC50
+      min pchembl_value: 3.38
+      max pchembl_value: 10.89
+      median pchembl_value: 7.00
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4015-1:
+    description: "Target CHEMBL4015: C-C chemokine receptor type 2"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4015-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4015/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1947643,CHEMBL2032541,CHEMBL2019386,CHEMBL1001496,CHEMBL2318189,CHEMBL3758041,CHEMBL932555,CHEMBL940859,CHEMBL832760,CHEMBL1685777,CHEMBL3579778,CHEMBL982453,CHEMBL899888,CHEMBL3061572,CHEMBL1686100
+      num_points: 499
+      activity_type: IC50
+      min pchembl_value: 4.06
+      max pchembl_value: 9.70
+      median pchembl_value: 7.19
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL220-1:
+    description: "Target CHEMBL220: Acetylcholinesterase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL220-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL220/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4146836,CHEMBL1646125,CHEMBL1769750,CHEMBL4391927,CHEMBL4703233,CHEMBL1837219,CHEMBL4193992,CHEMBL2345676,CHEMBL4268504,CHEMBL3635777,CHEMBL4770653,CHEMBL3049408,CHEMBL3995304,CHEMBL4711085,CHEMBL4274263,CHEMBL3116521,CHEMBL4433401,CHEMBL859798,CHEMBL874440,CHEMBL4826770,CHEMBL945890,CHEMBL4003411,CHEMBL1249049,CHEMBL1664219,CHEMBL4719111,CHEMBL895407,CHEMBL3584728,CHEMBL3626446,CHEMBL3419741,CHEMBL3383711,CHEMBL4478126,CHEMBL1785400,CHEMBL2443822,CHEMBL3758061,CHEMBL4408814,CHEMBL1293120,CHEMBL4831994,CHEMBL3631132,CHEMBL3768336,CHEMBL829154,CHEMBL894085,CHEMBL4818719,CHEMBL832763,CHEMBL4049960,CHEMBL2015198,CHEMBL1067130,CHEMBL3047076,CHEMBL3387411,CHEMBL3599183,CHEMBL3772142,CHEMBL4198693,CHEMBL2384302,CHEMBL4708697
+      num_points: 1582
+      activity_type: IC50
+      min pchembl_value: 4.01
+      max pchembl_value: 10.70
+      median pchembl_value: 5.96
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL206-1:
+    description: "Target CHEMBL206: Estrogen receptor alpha"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL206-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL206/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL886514,CHEMBL832786,CHEMBL852960,CHEMBL4219450,CHEMBL881884,CHEMBL832667,CHEMBL865276,CHEMBL865582,CHEMBL860989,CHEMBL3705466,CHEMBL831077,CHEMBL831663,CHEMBL833547,CHEMBL4393300,CHEMBL4703592,CHEMBL868001,CHEMBL855873
+      num_points: 489
+      activity_type: IC50
+      min pchembl_value: 4.01
+      max pchembl_value: 10.22
+      median pchembl_value: 6.94
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3105-1:
+    description: "Target CHEMBL3105: Poly [ADP-ribose] polymerase-1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3105-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3105/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1074647,CHEMBL3062171,CHEMBL3293313,CHEMBL1938153,CHEMBL5054878,CHEMBL2412862,CHEMBL993111,CHEMBL4254940,CHEMBL862536,CHEMBL941003,CHEMBL828154,CHEMBL4678140,CHEMBL1065327,CHEMBL1115415,CHEMBL3295803,CHEMBL833529,CHEMBL829484,CHEMBL3767923,CHEMBL4843990,CHEMBL3594611,CHEMBL2330729,CHEMBL4131013,CHEMBL860595
+      num_points: 794
+      activity_type: IC50
+      min pchembl_value: 4.06
+      max pchembl_value: 10.70
+      median pchembl_value: 7.49
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2409-1:
+    description: "Target CHEMBL2409: Epoxide hydratase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2409-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2409/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2437612,CHEMBL1062360,CHEMBL1936453,CHEMBL1100033,CHEMBL894930,CHEMBL3118265,CHEMBL896996,CHEMBL907007,CHEMBL1768321,CHEMBL1039073,CHEMBL1259736,CHEMBL4385467,CHEMBL1058191,CHEMBL4728534,CHEMBL1074708,CHEMBL4049250,CHEMBL3376213,CHEMBL1044409,CHEMBL4432729,CHEMBL828058,CHEMBL2318866,CHEMBL3768766,CHEMBL918225,CHEMBL912696,CHEMBL4611060,CHEMBL4669321,CHEMBL3812611,CHEMBL5055313,CHEMBL5034734,CHEMBL4019416,CHEMBL3223384,CHEMBL1001508,CHEMBL2393704,CHEMBL992693,CHEMBL1819920,CHEMBL4840717,CHEMBL4809614,CHEMBL4712087,CHEMBL2394377
+      num_points: 1265
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 10.57
+      median pchembl_value: 7.61
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL260-1:
+    description: "Target CHEMBL260: MAP kinase p38 alpha"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL260-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL260/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3395778,CHEMBL1913342,CHEMBL3580221,CHEMBL4395839,CHEMBL3090387,CHEMBL5042748,CHEMBL3070436,CHEMBL859283,CHEMBL3783189,CHEMBL3370278,CHEMBL1102672,CHEMBL868607,CHEMBL880637,CHEMBL2060772,CHEMBL3123036,CHEMBL932042,CHEMBL3705477,CHEMBL4337359,CHEMBL983811,CHEMBL2027256,CHEMBL3396501,CHEMBL3222289,CHEMBL1103558,CHEMBL3706342,CHEMBL889782,CHEMBL829582,CHEMBL1063098,CHEMBL914443,CHEMBL867362,CHEMBL4019402,CHEMBL4727214,CHEMBL2317232,CHEMBL4840120,CHEMBL3363471,CHEMBL870979,CHEMBL3705800,CHEMBL1053415,CHEMBL1918093,CHEMBL4841803,CHEMBL929947,CHEMBL934611,CHEMBL853498,CHEMBL1769102,CHEMBL874544
+      num_points: 1513
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 10.40
+      median pchembl_value: 7.52
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4015-2:
+    description: "Target CHEMBL4015: C-C chemokine receptor type 2"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4015-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4015/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL933957,CHEMBL1837907,CHEMBL3118392,CHEMBL3268526,CHEMBL832788,CHEMBL924037,CHEMBL2318045,CHEMBL2216326,CHEMBL1831615
+      num_points: 310
+      activity_type: IC50
+      min pchembl_value: 4.35
+      max pchembl_value: 9.60
+      median pchembl_value: 7.04
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL228-1:
+    description: "Target CHEMBL228: Serotonin transporter"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL228-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL228/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL940969,CHEMBL932889,CHEMBL1686715,CHEMBL930495,CHEMBL1285514,CHEMBL828157
+      num_points: 208
+      activity_type: IC50
+      min pchembl_value: 5.01
+      max pchembl_value: 9.89
+      median pchembl_value: 7.01
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4296-1:
+    description: "Target CHEMBL4296: Sodium channel protein type IX alpha subunit"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4296-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4296/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4251893,CHEMBL3072923,CHEMBL3390669,CHEMBL4256580,CHEMBL2149457,CHEMBL2072750,CHEMBL1042688,CHEMBL1781191,CHEMBL3803509,CHEMBL2396017,CHEMBL3386535,CHEMBL4188737,CHEMBL829535,CHEMBL4012328,CHEMBL4373219,CHEMBL3371413,CHEMBL1816129,CHEMBL4629712,CHEMBL4056898,CHEMBL4428883,CHEMBL2168492,CHEMBL929673,CHEMBL927254,CHEMBL4012237,CHEMBL4009750,CHEMBL4158630,CHEMBL3370462,CHEMBL4002420
+      num_points: 918
+      activity_type: IC50
+      min pchembl_value: 4.05
+      max pchembl_value: 10.38
+      median pchembl_value: 6.85
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4794-1:
+    description: "Target CHEMBL4794: Vanilloid receptor"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4794-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4794/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3363963,CHEMBL3429301,CHEMBL3771522,CHEMBL3706060,CHEMBL4125200,CHEMBL828688,CHEMBL832934,CHEMBL2319705
+      num_points: 233
+      activity_type: IC50
+      min pchembl_value: 4.48
+      max pchembl_value: 9.40
+      median pchembl_value: 6.60
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL344-1:
+    description: "Target CHEMBL344: Melanin-concentrating hormone receptor 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL344-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL344/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3796860,CHEMBL1648561,CHEMBL1937280,CHEMBL2033452,CHEMBL3602719,CHEMBL3774039,CHEMBL4410510,CHEMBL1919496,CHEMBL2061638,CHEMBL828687,CHEMBL1821542,CHEMBL2342870
+      num_points: 390
+      activity_type: IC50
+      min pchembl_value: 4.37
+      max pchembl_value: 9.77
+      median pchembl_value: 7.46
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL203-1:
+    description: "Target CHEMBL203: Epidermal growth factor receptor erbB1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL203-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL203/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1177207,CHEMBL881943,CHEMBL923201,CHEMBL3077166,CHEMBL2318907,CHEMBL3854863,CHEMBL1958796
+      num_points: 229
+      activity_type: IC50
+      min pchembl_value: 4.42
+      max pchembl_value: 8.70
+      median pchembl_value: 6.37
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4235-1:
+    description: "Target CHEMBL4235: 11-beta-hydroxysteroid dehydrogenase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4235-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4235/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL902516,CHEMBL1169304,CHEMBL2161684,CHEMBL3107719,CHEMBL2184996,CHEMBL995584,CHEMBL2412206,CHEMBL3705077,CHEMBL3745039,CHEMBL1912854,CHEMBL1764399,CHEMBL923794,CHEMBL1291707,CHEMBL3132106,CHEMBL2155280,CHEMBL934813,CHEMBL3384019,CHEMBL868712,CHEMBL2187380
+      num_points: 625
+      activity_type: IC50
+      min pchembl_value: 4.58
+      max pchembl_value: 10.00
+      median pchembl_value: 7.64
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4794-2:
+    description: "Target CHEMBL4794: Vanilloid receptor"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4794-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4794/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL976411,CHEMBL997020,CHEMBL1687126,CHEMBL2089708,CHEMBL912133,CHEMBL890240,CHEMBL889188,CHEMBL863527
+      num_points: 283
+      activity_type: IC50
+      min pchembl_value: 4.51
+      max pchembl_value: 9.52
+      median pchembl_value: 7.22
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL228-2:
+    description: "Target CHEMBL228: Serotonin transporter"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL228-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL228/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL978153,CHEMBL1012267,CHEMBL1031548,CHEMBL929225,CHEMBL995198,CHEMBL3385965,CHEMBL869834,CHEMBL2342729,CHEMBL1074040,CHEMBL948896,CHEMBL911127,CHEMBL3705414,CHEMBL1024553,CHEMBL945184,CHEMBL1217369,CHEMBL998746,CHEMBL4007284,CHEMBL2343889,CHEMBL931355,CHEMBL963840,CHEMBL862304,CHEMBL1647124,CHEMBL954293,CHEMBL1048875,CHEMBL987973,CHEMBL863612,CHEMBL5047397,CHEMBL1100588
+      num_points: 905
+      activity_type: IC50
+      min pchembl_value: 5.00
+      max pchembl_value: 9.89
+      median pchembl_value: 7.49
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL222-2:
+    description: "Target CHEMBL222: Norepinephrine transporter"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL222-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL222/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL929226,CHEMBL979028,CHEMBL1031549,CHEMBL948897,CHEMBL995197,CHEMBL1176114,CHEMBL931354,CHEMBL4714159,CHEMBL954294,CHEMBL4007285,CHEMBL3385966,CHEMBL1064405,CHEMBL869835,CHEMBL963839,CHEMBL945185,CHEMBL863613,CHEMBL1012269,CHEMBL2343890,CHEMBL998745,CHEMBL1041763,CHEMBL4433105,CHEMBL862356,CHEMBL1024552
+      num_points: 668
+      activity_type: IC50
+      min pchembl_value: 4.40
+      max pchembl_value: 9.50
+      median pchembl_value: 6.80
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1974-2:
+    description: "Target CHEMBL1974: Tyrosine-protein kinase receptor FLT3"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1974-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1974/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL920440,CHEMBL3705970,CHEMBL3240326,CHEMBL3705075,CHEMBL4430365,CHEMBL4828159,CHEMBL4831021,CHEMBL2066303,CHEMBL4059187,CHEMBL3865278,CHEMBL3361927,CHEMBL897762,CHEMBL4385972,CHEMBL4838705,CHEMBL3380434,CHEMBL868169,CHEMBL3615646,CHEMBL4276335
+      num_points: 516
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 10.00
+      median pchembl_value: 7.21
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3267-1:
+    description: "Target CHEMBL3267: PI3-kinase p110-gamma subunit"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3267-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3267/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3366680,CHEMBL871582,CHEMBL1068072,CHEMBL4416687,CHEMBL5029283,CHEMBL4731655,CHEMBL4405140,CHEMBL3411217,CHEMBL4158778,CHEMBL3112129,CHEMBL4001597,CHEMBL2330618,CHEMBL3223604,CHEMBL3603393,CHEMBL4156826,CHEMBL4821973,CHEMBL2216152,CHEMBL3122824,CHEMBL2065218,CHEMBL3136756
+      num_points: 708
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.52
+      median pchembl_value: 6.60
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4005-1:
+    description: "Target CHEMBL4005: PI3-kinase p110-alpha subunit"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4005-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4005/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4832705,CHEMBL3777095,CHEMBL3705490,CHEMBL4156824,CHEMBL3223603,CHEMBL871583,CHEMBL3112128,CHEMBL3602845,CHEMBL3615645,CHEMBL3705641,CHEMBL2342508,CHEMBL1648642,CHEMBL1106090,CHEMBL3705550,CHEMBL3579761,CHEMBL4312768,CHEMBL4821971,CHEMBL4312246,CHEMBL3587362,CHEMBL3867033,CHEMBL1068071,CHEMBL4416684,CHEMBL3368175,CHEMBL3706182,CHEMBL4621919,CHEMBL3611486,CHEMBL4689246,CHEMBL3116932,CHEMBL4845570,CHEMBL5047786,CHEMBL4150386,CHEMBL2320555,CHEMBL2330621,CHEMBL3603391,CHEMBL3411215,CHEMBL3136755
+      num_points: 1242
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 10.40
+      median pchembl_value: 6.95
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4822-1:
+    description: "Target CHEMBL4822: Beta-secretase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4822-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4822/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1042914,CHEMBL2186066,CHEMBL3706266,CHEMBL2353183,CHEMBL2427051,CHEMBL4703235,CHEMBL3705050,CHEMBL2187055,CHEMBL3395115,CHEMBL2404725,CHEMBL2183079,CHEMBL2176639,CHEMBL871431,CHEMBL1273970,CHEMBL1664806,CHEMBL2185271,CHEMBL3706149,CHEMBL1764635,CHEMBL2049561,CHEMBL2183110,CHEMBL4841885,CHEMBL4433405,CHEMBL3371674,CHEMBL3705044,CHEMBL3706090,CHEMBL2382573,CHEMBL2061979,CHEMBL1061264,CHEMBL3705920,CHEMBL4122954,CHEMBL946838,CHEMBL4343402,CHEMBL4179592,CHEMBL1044549,CHEMBL4183113,CHEMBL4668050,CHEMBL3705312,CHEMBL3705857,CHEMBL1827653,CHEMBL3705171
+      num_points: 1396
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.70
+      median pchembl_value: 6.68
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2148-1:
+    description: "Target CHEMBL2148: Tyrosine-protein kinase JAK3"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2148-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2148/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4265554,CHEMBL3603326,CHEMBL3706068,CHEMBL3592851,CHEMBL4482008,CHEMBL3706183,CHEMBL2378516,CHEMBL853499,CHEMBL4054821,CHEMBL1102455,CHEMBL4713241,CHEMBL3705592,CHEMBL3766654,CHEMBL3377593,CHEMBL3118992,CHEMBL4341344,CHEMBL3594575,CHEMBL3705847,CHEMBL3374009,CHEMBL4261265,CHEMBL908417,CHEMBL4612623
+      num_points: 737
+      activity_type: IC50
+      min pchembl_value: 4.92
+      max pchembl_value: 10.98
+      median pchembl_value: 7.92
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL240-1:
+    description: "Target CHEMBL240: HERG"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL240-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL240/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3424851,CHEMBL5038061,CHEMBL1120514,CHEMBL2014817,CHEMBL2320519,CHEMBL1044431,CHEMBL4843281,CHEMBL1225864,CHEMBL1107671,CHEMBL4312823,CHEMBL4478172,CHEMBL2021104,CHEMBL931097,CHEMBL4627218,CHEMBL2443482,CHEMBL2038474,CHEMBL909940,CHEMBL1059865,CHEMBL1954401,CHEMBL4619017,CHEMBL962309,CHEMBL2342727,CHEMBL3779605,CHEMBL3583383,CHEMBL1057876,CHEMBL1027667,CHEMBL1033089,CHEMBL3607541,CHEMBL1261450,CHEMBL4481758,CHEMBL3791472,CHEMBL948183,CHEMBL1810388,CHEMBL3755637,CHEMBL2045992,CHEMBL3227002,CHEMBL4195808,CHEMBL4054845,CHEMBL2148626,CHEMBL2034394,CHEMBL3227234,CHEMBL1259359
+      num_points: 1467
+      activity_type: IC50
+      min pchembl_value: 4.02
+      max pchembl_value: 9.85
+      median pchembl_value: 5.50
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2039-2:
+    description: "Target CHEMBL2039: Monoamine oxidase B"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2039-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2039/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4042091,CHEMBL3396577,CHEMBL3772179,CHEMBL4812791,CHEMBL3737575,CHEMBL3614599,CHEMBL1005558,CHEMBL4274279,CHEMBL1833523,CHEMBL4147093,CHEMBL2060937,CHEMBL2394315,CHEMBL2034449,CHEMBL3095874,CHEMBL4141657,CHEMBL4686672,CHEMBL3418558,CHEMBL4138673,CHEMBL1217544,CHEMBL4192761,CHEMBL965567,CHEMBL4138636,CHEMBL3606166,CHEMBL909462,CHEMBL3707812,CHEMBL4048104,CHEMBL3396572,CHEMBL3863357,CHEMBL4262784,CHEMBL4182524,CHEMBL4813510,CHEMBL3745316,CHEMBL2317359,CHEMBL4354761,CHEMBL4816020,CHEMBL3858835
+      num_points: 1005
+      activity_type: IC50
+      min pchembl_value: 4.01
+      max pchembl_value: 9.46
+      median pchembl_value: 5.81
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4235-3:
+    description: "Target CHEMBL4235: 11-beta-hydroxysteroid dehydrogenase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4235-3.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4235/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3291633,CHEMBL3404742,CHEMBL1118158,CHEMBL1105684,CHEMBL902363,CHEMBL909897,CHEMBL886924,CHEMBL2038006,CHEMBL3395231,CHEMBL2162049,CHEMBL1804458,CHEMBL4681492,CHEMBL1913237
+      num_points: 379
+      activity_type: IC50
+      min pchembl_value: 4.19
+      max pchembl_value: 10.52
+      median pchembl_value: 6.98
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2971-1:
+    description: "Target CHEMBL2971: Tyrosine-protein kinase JAK2"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2971-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2971/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4261266,CHEMBL5038796,CHEMBL2378515,CHEMBL1926252,CHEMBL4612622,CHEMBL4481929,CHEMBL5041943,CHEMBL3374010,CHEMBL3707926,CHEMBL4268221,CHEMBL4341343,CHEMBL3707801,CHEMBL4628503,CHEMBL3374493,CHEMBL908418,CHEMBL3705799,CHEMBL3706008,CHEMBL3594576,CHEMBL4825783,CHEMBL4347596,CHEMBL3239499,CHEMBL3404501,CHEMBL4713240,CHEMBL3377596,CHEMBL3705391,CHEMBL1102456
+      num_points: 802
+      activity_type: IC50
+      min pchembl_value: 4.12
+      max pchembl_value: 9.77
+      median pchembl_value: 7.23
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL260-2:
+    description: "Target CHEMBL260: MAP kinase p38 alpha"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL260-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL260/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4220319,CHEMBL1013160,CHEMBL3268789,CHEMBL1811277,CHEMBL904269,CHEMBL2405979,CHEMBL4003428,CHEMBL4324174,CHEMBL4689220
+      num_points: 288
+      activity_type: IC50
+      min pchembl_value: 4.80
+      max pchembl_value: 9.70
+      median pchembl_value: 7.00
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL240-2:
+    description: "Target CHEMBL240: HERG"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL240-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL240/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4004312,CHEMBL1831617,CHEMBL4030012,CHEMBL3611641,CHEMBL2216324,CHEMBL914755,CHEMBL2033832,CHEMBL2160723,CHEMBL3776609,CHEMBL1764797,CHEMBL3615683,CHEMBL1061548,CHEMBL4028623,CHEMBL3096732,CHEMBL3855279,CHEMBL984535,CHEMBL3797009,CHEMBL1837909,CHEMBL1056550,CHEMBL1105740,CHEMBL2330781
+      num_points: 670
+      activity_type: IC50
+      min pchembl_value: 4.05
+      max pchembl_value: 8.82
+      median pchembl_value: 5.54
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4235-4:
+    description: "Target CHEMBL4235: 11-beta-hydroxysteroid dehydrogenase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4235-4.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4235/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL887782,CHEMBL1831796,CHEMBL1647079,CHEMBL1052405,CHEMBL1013098,CHEMBL1013588,CHEMBL900940,CHEMBL1073437
+      num_points: 243
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 9.30
+      median pchembl_value: 7.52
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3229-1:
+    description: "Target CHEMBL3229: Anandamide amidohydrolase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3229-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3229/
+      source: ChEMBL_32
+      target_organism: Rattus norvegicus
+      assays_included: CHEMBL4371948,CHEMBL4139748,CHEMBL949088,CHEMBL1066440,CHEMBL1831759,CHEMBL970754,CHEMBL3771523,CHEMBL1022293,CHEMBL902588
+      num_points: 239
+      activity_type: IC50
+      min pchembl_value: 4.22
+      max pchembl_value: 9.48
+      median pchembl_value: 6.48
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL284-2:
+    description: "Target CHEMBL284: Dipeptidyl peptidase IV"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL284-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL284/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2091655,CHEMBL1039009,CHEMBL4036397,CHEMBL999374,CHEMBL3241352,CHEMBL933456,CHEMBL3370155,CHEMBL3096171
+      num_points: 229
+      activity_type: IC50
+      min pchembl_value: 4.30
+      max pchembl_value: 9.68
+      median pchembl_value: 7.14
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4685-1:
+    description: "Target CHEMBL4685: Indoleamine 2,3-dioxygenase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4685-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4685/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4381946,CHEMBL5043722,CHEMBL4145006,CHEMBL3767626,CHEMBL4262881,CHEMBL4329405,CHEMBL4367261,CHEMBL4274901,CHEMBL935410,CHEMBL4236677,CHEMBL4628286,CHEMBL4058731,CHEMBL4358451,CHEMBL4684572,CHEMBL4717711,CHEMBL4709780,CHEMBL1670748,CHEMBL4682949
+      num_points: 568
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 8.60
+      median pchembl_value: 6.20
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL222-1:
+    description: "Target CHEMBL222: Norepinephrine transporter"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL222-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL222/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1831835,CHEMBL1120740,CHEMBL966882,CHEMBL1101480,CHEMBL1020016,CHEMBL1072383,CHEMBL1044082,CHEMBL1055024
+      num_points: 214
+      activity_type: IC50
+      min pchembl_value: 5.37
+      max pchembl_value: 8.96
+      median pchembl_value: 7.42
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3229-2:
+    description: "Target CHEMBL3229: Anandamide amidohydrolase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3229-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3229/
+      source: ChEMBL_32
+      target_organism: Rattus norvegicus
+      assays_included: CHEMBL1954238,CHEMBL2211372,CHEMBL1763765,CHEMBL3123528,CHEMBL978248,CHEMBL3117157,CHEMBL3705650,CHEMBL4728111
+      num_points: 309
+      activity_type: IC50
+      min pchembl_value: 4.16
+      max pchembl_value: 9.15
+      median pchembl_value: 6.64
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3717-1:
+    description: "Target CHEMBL3717: Hepatocyte growth factor receptor"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3717-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3717/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3389844,CHEMBL3705294,CHEMBL4686593,CHEMBL2390327,CHEMBL2421441,CHEMBL4840576,CHEMBL4685514,CHEMBL3292047,CHEMBL2406637,CHEMBL3404455,CHEMBL3583343,CHEMBL4021199,CHEMBL3792084,CHEMBL3594710,CHEMBL1029826,CHEMBL4838187,CHEMBL3706358,CHEMBL2447158,CHEMBL4426782,CHEMBL3118144,CHEMBL4686381,CHEMBL2327588,CHEMBL2379920,CHEMBL4432475,CHEMBL3801041,CHEMBL4034156,CHEMBL3396121,CHEMBL4774498,CHEMBL3420280,CHEMBL1062250,CHEMBL3364271,CHEMBL4342006,CHEMBL3226601,CHEMBL3778974,CHEMBL3705316,CHEMBL1803461,CHEMBL3381417,CHEMBL4771042,CHEMBL4147636
+      num_points: 1370
+      activity_type: IC50
+      min pchembl_value: 4.22
+      max pchembl_value: 9.89
+      median pchembl_value: 7.74
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4235-2:
+    description: "Target CHEMBL4235: 11-beta-hydroxysteroid dehydrogenase 1"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4235-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4235/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2071773,CHEMBL3705551,CHEMBL1273473,CHEMBL3705891,CHEMBL3225153,CHEMBL3705158,CHEMBL1018625,CHEMBL4036189
+      num_points: 252
+      activity_type: IC50
+      min pchembl_value: 4.89
+      max pchembl_value: 10.00
+      median pchembl_value: 8.28
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2039-1:
+    description: "Target CHEMBL2039: Monoamine oxidase B"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2039-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2039/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1769015,CHEMBL3806786,CHEMBL1251644,CHEMBL2421086,CHEMBL2154471,CHEMBL4353634,CHEMBL4478104,CHEMBL1071596,CHEMBL964042,CHEMBL3223014,CHEMBL1246375,CHEMBL4233812,CHEMBL4711821,CHEMBL1833115
+      num_points: 583
+      activity_type: IC50
+      min pchembl_value: 4.05
+      max pchembl_value: 9.40
+      median pchembl_value: 6.05
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL4685-2:
+    description: "Target CHEMBL4685: Indoleamine 2,3-dioxygenase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL4685-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4685/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3368210,CHEMBL1040013,CHEMBL2150124,CHEMBL4831827,CHEMBL3867377,CHEMBL4339113,CHEMBL4360761
+      num_points: 217
+      activity_type: IC50
+      min pchembl_value: 4.05
+      max pchembl_value: 8.55
+      median pchembl_value: 6.39
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1865-1:
+    description: "Target CHEMBL1865: Histone deacetylase 6"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1865-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1865/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL5032351,CHEMBL2050419,CHEMBL4724379,CHEMBL3373387,CHEMBL4835059,CHEMBL3293471,CHEMBL3420277,CHEMBL1113906,CHEMBL3705864,CHEMBL3379481,CHEMBL5039302,CHEMBL3761212,CHEMBL3803864,CHEMBL4390356,CHEMBL4842875,CHEMBL2433169,CHEMBL4812286,CHEMBL2020396,CHEMBL3998874,CHEMBL4669386,CHEMBL3388096,CHEMBL4268223,CHEMBL5038797,CHEMBL5042562,CHEMBL3771760,CHEMBL4187413
+      num_points: 719
+      activity_type: IC50
+      min pchembl_value: 4.31
+      max pchembl_value: 10.00
+      median pchembl_value: 7.01
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5763-2:
+    description: "Target CHEMBL5763: Cholinesterase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5763-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5763/
+      source: ChEMBL_32
+      target_organism: Equus caballus
+      assays_included: CHEMBL4197232,CHEMBL3588476,CHEMBL3826560,CHEMBL3421031,CHEMBL4193443,CHEMBL3789710,CHEMBL3637272,CHEMBL2025881,CHEMBL2162681,CHEMBL3619984,CHEMBL4408391,CHEMBL3757702,CHEMBL4048076,CHEMBL3369133,CHEMBL2020731,CHEMBL2384301,CHEMBL4146837,CHEMBL2423526,CHEMBL1787217,CHEMBL3418414,CHEMBL1837220,CHEMBL4396590,CHEMBL3870526,CHEMBL1918527,CHEMBL5039422,CHEMBL3406577,CHEMBL4821425,CHEMBL4353563,CHEMBL4047917,CHEMBL1167960,CHEMBL1105649,CHEMBL3105939,CHEMBL3370620,CHEMBL2174185,CHEMBL2438751,CHEMBL2343851,CHEMBL3239160,CHEMBL3399312,CHEMBL4236742,CHEMBL3821436,CHEMBL4686682,CHEMBL4408523,CHEMBL3135527,CHEMBL1118313,CHEMBL2393907,CHEMBL3879335,CHEMBL2340790,CHEMBL3608118,CHEMBL3365680,CHEMBL2379021,CHEMBL3269114,CHEMBL4257759,CHEMBL4479286,CHEMBL2394392,CHEMBL3116520,CHEMBL4155445,CHEMBL2148330,CHEMBL4035438,CHEMBL4124583,CHEMBL4478127,CHEMBL4825145,CHEMBL3875273,CHEMBL2390137,CHEMBL1671575
+      num_points: 1823
+      activity_type: IC50
+      min pchembl_value: 4.01
+      max pchembl_value: 10.35
+      median pchembl_value: 5.58
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL247-2:
+    description: "Target CHEMBL247: Human immunodeficiency virus type 1 reverse transcriptase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL247-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL247/
+      source: ChEMBL_32
+      target_organism: Human immunodeficiency virus 1
+      assays_included: CHEMBL3860145,CHEMBL1646374,CHEMBL3418915,CHEMBL4273398,CHEMBL4401323,CHEMBL3116999,CHEMBL4039498,CHEMBL3619838
+      num_points: 220
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 8.12
+      median pchembl_value: 5.98
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2039-3:
+    description: "Target CHEMBL2039: Monoamine oxidase B"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2039-3.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2039/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4401962,CHEMBL2342563,CHEMBL4430985,CHEMBL4048089,CHEMBL4055294,CHEMBL3122614,CHEMBL4624277,CHEMBL1838814,CHEMBL2382555,CHEMBL4481780,CHEMBL3364094,CHEMBL4011737,CHEMBL4325517,CHEMBL3994352,CHEMBL4040840,CHEMBL4035444,CHEMBL4314265
+      num_points: 484
+      activity_type: IC50
+      min pchembl_value: 3.40
+      max pchembl_value: 9.64
+      median pchembl_value: 6.26
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5251-2:
+    description: "Target CHEMBL5251: Tyrosine-protein kinase BTK"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5251-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5251/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL1918488,CHEMBL3270595,CHEMBL4360839,CHEMBL4414894,CHEMBL4350910,CHEMBL4727415
+      num_points: 223
+      activity_type: IC50
+      min pchembl_value: 4.20
+      max pchembl_value: 10.08
+      median pchembl_value: 7.73
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2971-2:
+    description: "Target CHEMBL2971: Tyrosine-protein kinase JAK2"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2971-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2971/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3802363,CHEMBL1936085,CHEMBL5047427,CHEMBL4478762,CHEMBL4236384,CHEMBL4402146,CHEMBL4812335,CHEMBL2067611
+      num_points: 208
+      activity_type: IC50
+      min pchembl_value: 5.00
+      max pchembl_value: 10.05
+      median pchembl_value: 7.58
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL3130-1:
+    description: "Target CHEMBL3130: PI3-kinase p110-delta subunit"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL3130-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3130/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3996844,CHEMBL4824997,CHEMBL3603394,CHEMBL3112127,CHEMBL3611489,CHEMBL4821970,CHEMBL2330619,CHEMBL4405141,CHEMBL5029284,CHEMBL3876605,CHEMBL4156827,CHEMBL3707605,CHEMBL4427866,CHEMBL3129533,CHEMBL4387673,CHEMBL2065219,CHEMBL4416685,CHEMBL4705408,CHEMBL3223609,CHEMBL4042388,CHEMBL4621798,CHEMBL4728121,CHEMBL4312769,CHEMBL3705837,CHEMBL3411218,CHEMBL4840758
+      num_points: 987
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 10.32
+      median pchembl_value: 7.60
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL2148-2:
+    description: "Target CHEMBL2148: Tyrosine-protein kinase JAK3"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL2148-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2148/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2067181,CHEMBL4236382,CHEMBL4124177,CHEMBL4478763,CHEMBL4685309,CHEMBL4332969,CHEMBL4130923,CHEMBL4033004
+      num_points: 207
+      activity_type: IC50
+      min pchembl_value: 5.25
+      max pchembl_value: 9.47
+      median pchembl_value: 6.86
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5145-2:
+    description: "Target CHEMBL5145: Serine/threonine-protein kinase B-raf"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5145-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5145/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3615800,CHEMBL3816885,CHEMBL3802673,CHEMBL2073610,CHEMBL3240252,CHEMBL4050071,CHEMBL2438530
+      num_points: 221
+      activity_type: IC50
+      min pchembl_value: 4.50
+      max pchembl_value: 9.70
+      median pchembl_value: 7.32
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1163125-2:
+    description: "Target CHEMBL1163125: Bromodomain-containing protein 4"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1163125-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1163125/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL2351097,CHEMBL4012419,CHEMBL4144034,CHEMBL4405043,CHEMBL4154870,CHEMBL4612475,CHEMBL4033128,CHEMBL4198470,CHEMBL4357123
+      num_points: 286
+      activity_type: IC50
+      min pchembl_value: 4.16
+      max pchembl_value: 9.00
+      median pchembl_value: 6.53
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1865-2:
+    description: "Target CHEMBL1865: Histone deacetylase 6"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1865-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1865/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4828678,CHEMBL5044663,CHEMBL4812485,CHEMBL4416947,CHEMBL2427136,CHEMBL4708169,CHEMBL3860994,CHEMBL3705877,CHEMBL4331290,CHEMBL4821490
+      num_points: 351
+      activity_type: IC50
+      min pchembl_value: 4.90
+      max pchembl_value: 9.05
+      median pchembl_value: 6.73
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1163125-1:
+    description: "Target CHEMBL1163125: Bromodomain-containing protein 4"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1163125-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1163125/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4716982,CHEMBL5037307,CHEMBL3414207,CHEMBL3382829,CHEMBL5044553,CHEMBL4685258,CHEMBL4733659,CHEMBL2433591,CHEMBL4012513,CHEMBL4625971,CHEMBL4344635,CHEMBL3864390,CHEMBL4308744,CHEMBL4331530,CHEMBL3380069,CHEMBL4186386,CHEMBL4310223,CHEMBL4200424,CHEMBL4223756,CHEMBL2433086,CHEMBL3591776,CHEMBL4824072,CHEMBL4382969,CHEMBL3226597
+      num_points: 711
+      activity_type: IC50
+      min pchembl_value: 4.00
+      max pchembl_value: 8.92
+      median pchembl_value: 5.90
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1741186-1:
+    description: "Target CHEMBL1741186: Nuclear receptor ROR-gamma"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1741186-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1741186/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4220523,CHEMBL3796417,CHEMBL4151884,CHEMBL4339285,CHEMBL3610010,CHEMBL3270932,CHEMBL3599133,CHEMBL4772592,CHEMBL4197717,CHEMBL3106087,CHEMBL4627808,CHEMBL4833083,CHEMBL3598804
+      num_points: 441
+      activity_type: IC50
+      min pchembl_value: 4.77
+      max pchembl_value: 8.89
+      median pchembl_value: 6.85
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5251-1:
+    description: "Target CHEMBL5251: Tyrosine-protein kinase BTK"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5251-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5251/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3706082,CHEMBL3296229,CHEMBL4201925,CHEMBL4189646,CHEMBL4358487,CHEMBL3407032,CHEMBL3627421,CHEMBL4616764,CHEMBL5045465,CHEMBL4603779,CHEMBL4822448,CHEMBL3705848,CHEMBL3748501,CHEMBL5043203,CHEMBL3705416,CHEMBL3406073,CHEMBL3614375,CHEMBL3705288
+      num_points: 597
+      activity_type: IC50
+      min pchembl_value: 4.39
+      max pchembl_value: 10.15
+      median pchembl_value: 8.06
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5145-1:
+    description: "Target CHEMBL5145: Serine/threonine-protein kinase B-raf"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5145-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5145/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3881301,CHEMBL3584220,CHEMBL4262904,CHEMBL3371771,CHEMBL5046400,CHEMBL4413913
+      num_points: 329
+      activity_type: IC50
+      min pchembl_value: 4.06
+      max pchembl_value: 10.15
+      median pchembl_value: 7.42
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1163125-3:
+    description: "Target CHEMBL1163125: Bromodomain-containing protein 4"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1163125-3.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1163125/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL3591211,CHEMBL4836630,CHEMBL4189284,CHEMBL4727044,CHEMBL4404018,CHEMBL3587158
+      num_points: 231
+      activity_type: IC50
+      min pchembl_value: 3.80
+      max pchembl_value: 8.30
+      median pchembl_value: 5.70
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1163125-4:
+    description: "Target CHEMBL1163125: Bromodomain-containing protein 4"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1163125-4.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1163125/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4194886,CHEMBL4255966,CHEMBL4767044,CHEMBL4415481,CHEMBL4185405,CHEMBL4728473,CHEMBL4130829,CHEMBL3782657,CHEMBL4123151,CHEMBL4354443,CHEMBL4150992
+      num_points: 400
+      activity_type: IC50
+      min pchembl_value: 4.40
+      max pchembl_value: 8.82
+      median pchembl_value: 6.41
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1741186-2:
+    description: "Target CHEMBL1741186: Nuclear receptor ROR-gamma"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1741186-2.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1741186/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4266710,CHEMBL4306826,CHEMBL4394430,CHEMBL4180674,CHEMBL4222778,CHEMBL4349913,CHEMBL4121349,CHEMBL4620706
+      num_points: 295
+      activity_type: IC50
+      min pchembl_value: 5.06
+      max pchembl_value: 9.43
+      median pchembl_value: 7.36
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL1974-1:
+    description: "Target CHEMBL1974: Tyrosine-protein kinase receptor FLT3"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL1974-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1974/
+      source: ChEMBL_32
+      target_organism: Homo sapiens
+      assays_included: CHEMBL4353138,CHEMBL4836766,CHEMBL4315097,CHEMBL5054520
+      num_points: 203
+      activity_type: IC50
+      min pchembl_value: 4.90
+      max pchembl_value: 9.48
+      median pchembl_value: 6.39
+    driver: intake_rdkit.smiles.SmilesSource
+
+  CHEMBL5763-1:
+    description: "Target CHEMBL5763: Cholinesterase"
+    args:
+      filename: '{{ CATALOG_DIR }}/source_data/target_CHEMBL5763-1.IC50.csv.gz'
+      smilesColumn: canonical_smiles
+    metadata:
+      url: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5763/
+      source: ChEMBL_32
+      target_organism: Equus caballus
+      assays_included: CHEMBL5031443,CHEMBL4811144,CHEMBL4709936,CHEMBL4708126,CHEMBL4844511,CHEMBL4832641,CHEMBL4831103
+      num_points: 223
+      activity_type: IC50
+      min pchembl_value: 4.74
+      max pchembl_value: 8.70
+      median pchembl_value: 5.91
+    driver: intake_rdkit.smiles.SmilesSource
+
