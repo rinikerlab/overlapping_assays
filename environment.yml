@@ -1,4 +1,4 @@
-name: py311_overlappingassays_
+name: py311_overlappingassays
 channels:
   - conda-forge
 dependencies:
@@ -11,5 +11,5 @@ dependencies:
   - ipython-sql
   - matplotlib
   - sqlalchemy=1.4
-  - intake
-prefix: /localhome/glandrum/.conda/envs/py311_pymoo
+  - pandas
+  
