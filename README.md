@@ -1,10 +1,10 @@
 # Citation
 
-This repo contains the code and datasets for the publication
+This repo contains the code and datasets for the manuscript
 
     G.A. Landrum, S. Riniker 
     "Combining IC50 or Ki Values From Different Sources is a Source of Significant Noise"
-    https://FIXME
+    https://doi.org/10.26434/chemrxiv-2024-2smhk
 
 
 # Data and results
